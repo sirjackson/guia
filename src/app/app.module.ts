@@ -13,6 +13,7 @@ import { EmpresasComponent } from './pages/empresas/empresas.component';
 
 // maps
 import { AgmCoreModule } from "@agm/core";
+import { ServiciosComponent } from './pages/servicios/servicios.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AgmCoreModule } from "@agm/core";
     FooterComponent,
     ContacComponent,
     HomeComponent,
-    EmpresasComponent
+    EmpresasComponent,
+    ServiciosComponent
   ],
   imports: [
     BrowserModule,

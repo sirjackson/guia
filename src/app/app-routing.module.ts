@@ -5,10 +5,12 @@ import { NgModule } from "@angular/core";
 import {Routes, RouterModule} from '@angular/router';
 import { HomeComponent } from "./pages/home/home.component";
 import {EmpresasComponent} from "./pages/empresas/empresas.component";
+import { ServiciosComponent } from "./pages/servicios/servicios.component";
 import { ContacComponent } from "./shared/contac/contac.component";
 
 const app_routes: Routes=[
     {path:'', component: HomeComponent},
+    {path: 'servicios', component: ServiciosComponent},
     {path:'contact', component: ContacComponent},
     {path:'empresas', component: EmpresasComponent},
     {path:'**', pathMatch:'full', redirectTo:''}

@@ -1847,6 +1847,8 @@ input, select, textarea {
 /* Image */
 
 	.image {
+		width: 350px;
+		height: 250;
 		border: 0;
 		position: relative;
 	}
@@ -1861,9 +1863,7 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		.image.fit {
-			display: block;
-		}
+	
 
 			.image.fit img {
 				display: block;
