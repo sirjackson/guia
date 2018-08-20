@@ -6,3 +6,9 @@
     width: 20px !important;
     height: 20px !important;
 }
+
+
+.e_desactivado {
+    pointer-events: none;
+    cursor: default;
+    }
