@@ -3,6 +3,47 @@
 <br>
 <br>
 <br>
+
+<h1>Prueba de vista de empresas</h1>
+<ul>
+  <li *ngFor="let empresa of empresas">
+	  <a [routerLink]="['/empresas',empresa.id]" routerLinkActive="router-link-active" >
+		{{empresa.name}}
+	</a>
+  </li>
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- <br> IMAGENES 300 X 200 -->
 <!-- <div class="container">
     <div class="row">
@@ -18,7 +59,7 @@
       <a href="#"><div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="https://videotutoriales.com/maspa/maspa8.jpg" /></div></a>
     </div>
 </div> -->
-
+<!-- 
 
 <div class="container ">
 
@@ -88,7 +129,7 @@
 			</li>
 		</ul>
     </div>
-</div>
+</div> -->
 <!-- 
 	<div class="container">
 		<ul class="caption-style-3">
