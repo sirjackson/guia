@@ -1,0 +1,1 @@
+export const SERVERURL = "http://localhost:81/guia-donesitios/public";

@@ -1,104 +1,65 @@
-figure.effect-zoe figcaption {
-	top: auto !important;
-	bottom: 0 !important;
-	padding: 1em !important;
-	height: 3.75em !important; 
-	background: #fff !important;
-	color: #3c4a50 !important;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,100%,0);
-	transform: translate3d(0,100%,0);
+.card{
+	background: #FDFEFE   !important;
+	padding: 0% !important;
+	border-radius: 5px 5px 0px 0px !important;
+	border: 0px solid #000000 !important;
+	box-shadow: 0px 10px 10px -2px rgba(204,204,153,1) !important;
+	margin-left: 5% !important;
+	margin-right: 3% !important ;
+	margin-top: 4% !important;
+	
+}
+.img-card{
+	width: 100% !important;
+	height: 15% px !important;
+	margin-top: 0% !important;
+	margin-left: 0% !important;
+	margin-right: 0% !important;
+	border-radius: 5px 5px 0px 0px !important;
+	border: 0px solid #000000 !important;
+
+	
+}
+h2{
+	text-align: center !important;
+	color: #000000 !important;
+
 }
 
-figure.effect-zoe h2 {
-	float: left !important;
+.card-body{
+	margin-left: 5% !important;
+	
+ }
+
+
+h4 {
+	margin-top: 5% !important;
+	margin-bottom: 5% !important;
+	text-align: center !important;
+	color: #000000 !important;
 }
 
-figure.effect-zoe p.icon-links a {
-	float: right;
-	color: #3c4a50;
-	font-size: 1.4em;
+h4:hover {
+	
+	font-size: 18px; 
+	COLOR: #1278BF; 
+	text-shadow: 0px 0px 9px #508AD3;
+	text-decoration-line: underline;
 }
 
-figure.effect-zoe:hover p.icon-links a:hover,
-figure.effect-zoe:hover p.icon-links a:focus {
-	color: #252d31;
-}
 
-figure.effect-zoe p.description {
-	position: absolute;
-	bottom: 8em;
-	padding: 2em;
-	color: #fff;
-	text-transform: none;
-	font-size: 90%;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
-	-webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
+.bar-cal{
+	margin-top: 5% !important;
+	margin-left: 30% !important;
 }
-
-figure.effect-zoe h2,
-figure.effect-zoe p.icon-links a {
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,200%,0);
-	transform: translate3d(0,200%,0);
+.footer{
+	margin-left: 3% !important;
+	
 }
-
-figure.effect-zoe p.icon-links a span::before {
-	display: inline-block;
-	padding: 8px 10px;
-	font-family: 'feathericons';
-	speak: none;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+.a-footer {
+	margin-right: 3% !important;
+	height: 50% !important;
 }
-
-.icon-eye::before {
-	content: '\e000';
-}
-
-.icon-paper-clip::before {
-	content: '\e001';
-}
-
-.icon-heart::before {
-	content: '\e024';
-}
-
-figure.effect-zoe h2 {
-	display: inline-block;
-}
-
-figure.effect-zoe:hover p.description {
-	opacity: 1;
-}
-
-figure.effect-zoe:hover figcaption,
-figure.effect-zoe:hover h2,
-figure.effect-zoe:hover p.icon-links a {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-
-figure.effect-zoe:hover h2 {
-	-webkit-transition-delay: 0.05s;
-	transition-delay: 0.05s;
-}
-
-figure.effect-zoe:hover p.icon-links a:nth-child(3) {
-	-webkit-transition-delay: 0.1s;
-	transition-delay: 0.1s;
-}
-
-figure.effect-zoe:hover p.icon-links a:nth-child(2) {
-	-webkit-transition-delay: 0.15s;
-	transition-delay: 0.15s;
-}
-
-figure.effect-zoe:hover p.icon-links a:first-child {
-	-webkit-transition-delay: 0.2s;
-	transition-delay: 0.2s;
+.a-leermas {
+	margin-left: 10% !important;
 }

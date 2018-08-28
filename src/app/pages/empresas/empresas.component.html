@@ -3,145 +3,62 @@
 <br>
 <br>
 <br>
+<div class="container">
+	<br><br>
+<div class="row">
+	
+	<div *ngFor="let item of empresas"   class="col-3 card col-12-narrower">
+		<a [routerLink]="['/empresas/', item.id]" >
+			<img class="img-card" src="{{item.photo_url}}" alt="">
+		</a>
+		
+		<div class="bar-cal">
+				<bar-rating [(rate)]="rate" [max]="5"></bar-rating>
+		</div>		
+		<a class=" "  [routerLink]="['/empresas/', item.id]"
+		><h4>{{item.nombre}}</h4>
+		</a>
+		<div class="card-body">
+			<p>{{item.description_corta}}
+			</p>
+		</div>
+		<div class="footer">
+			<a class="icon circle a-footer" href="http://www.aguamania.com.ec/" target="_blank">
+					<i class=" icon fa fa-comments fa-1" aria-hidden="true">253</i>
+			</a>
+			<a class="icon circle a-footer" href="http://www.aguamania.com.ec/" target="_blank">
+					<i class=" icon fa  fa-gratipay fa-1" aria-hidden="true">223</i>
+			</a>
+			
+			<a class="icon a-leermas " [routerLink]="['/empresas/', item.id]" > Leer más 
+				<i class=" icon fa fa-angle-right" aria-hidden="true"></i>
+			</a>
+		</div>
+	</div>
 
-<h1>Prueba de vista de empresas</h1>
-<ul>
-  <li *ngFor="let empresa of empresas">
-	  <a [routerLink]="['/empresas',empresa.id]" routerLinkActive="router-link-active" >
-		{{empresa.name}}
-	</a>
-  </li>
-
-</ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
+</div>
+	<br><br><br>
+</div>
 
 
-<!-- <br> IMAGENES 300 X 200 -->
-<!-- <div class="container">
-    <div class="row">
-      <a href="#"><div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="https://videotutoriales.com/maspa/maspa1.jpg" /></div></a>
-      <a href="#"><div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="https://videotutoriales.com/maspa/maspa2.jpg" /></div></a>
-      <a href="#"><div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="https://videotutoriales.com/maspa/maspa3.jpg" /></div></a>
-      <a href="#"><div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="https://videotutoriales.com/maspa/maspa4.jpg" /></div></a>
-      </div>
-      <div class="row">
-       <a href="#"><div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="https://videotutoriales.com/maspa/maspa5.jpg" /></div></a>      
-      <a href="#"><div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="https://videotutoriales.com/maspa/maspa6.jpg" /></div></a>
-      <a href="#"><div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="https://videotutoriales.com/maspa/maspa7.jpg" /></div></a>
-      <a href="#"><div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="https://videotutoriales.com/maspa/maspa8.jpg" /></div></a>
-    </div>
-</div> -->
-<!-- 
 
-<div class="container ">
 
-    <div class="row">
 
-    </div>
-    <div class="row effect-zoe">
-            <div class="grid">
 
-                    <figure class="effect-zoe">
-                        <img src="https://videotutoriales.com/maspa/maspa5.jpg" alt="img01"/>
-                        <figcaption>
-                            <h2>Nice <span>Lily</span></h2>
-                            <p>Lily likes to play with crayons and pencils</p>
-                            <a href="#">Ver todo</a>
-                        </figcaption>			
-                    </figure>
-                </div>
-        <ul class="caption-style-3">
-			<li>
-				<img src="https://videotutoriales.com/maspa/maspa5.jpg" alt="">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>Amazing Caption</h1>
-						<p>Whatever It Is - Always Awesome</p>
-					</div>
-				</div>
-			</li>
-        </ul>
-        <ul class="caption-style-3">
-			<li>
-				<img src="https://videotutoriales.com/maspa/maspa5.jpg" alt="">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>Amazing Caption</h1>
-						<p>Whatever It Is - Always Awesome</p>
-					</div>
-				</div>
-			</li>
-        </ul>
-        
-        <ul class="caption-style-3">
-			<li>
-				<img src="https://videotutoriales.com/maspa/maspa5.jpg" alt="">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>Amazing Caption</h1>
-						<p>Whatever It Is - Always Awesome</p>
-					</div>
-				</div>
-			</li>
-        </ul>
-        
-        <ul class="caption-style-3">
-			<li>
-				<img src="https://videotutoriales.com/maspa/maspa5.jpg" alt="">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>Amazing Caption</h1>
-						<p>Whatever It Is - Always Awesome</p>
-					</div>
-				</div>
-			</li>
-		</ul>
-    </div>
-</div> -->
-<!-- 
-	<div class="container">
-		<ul class="caption-style-3">
-			<li>
-				<img src="https://videotutoriales.com/maspa/maspa5.jpg" alt="">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>Amazing Caption</h1>
-						<p>Whatever It Is - Always Awesome</p>
-					</div>
-				</div>
-			</li>
-		</ul>
-	</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
